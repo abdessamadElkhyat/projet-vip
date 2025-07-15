@@ -13,20 +13,23 @@
         margin: 0;
         padding: 0;
       }
+
       header {
         background: linear-gradient(135deg, #2c3e50, #3498db);
         color: white;
         text-align: center;
-        padding: 30px;
+        padding: 30px 15px;
       }
+
       .content {
         display: flex;
         flex-direction: row;
         max-width: 1200px;
         margin: auto;
-        padding: 20px;
+        padding: 20px 15px;
         gap: 30px;
       }
+
       .article-container {
         flex: 3;
         background: white;
@@ -43,11 +46,13 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         height: fit-content;
       }
+
       aside h3 {
         color: #2c3e50;
         font-size: 1.1em;
         margin-bottom: 10px;
       }
+
       .ad-box {
         background-color: #e3e3e3;
         height: 250px;
@@ -59,40 +64,81 @@
         color: #555;
         font-size: 14px;
       }
+
       h1,
       h2 {
         color: #2c3e50;
       }
+
       p,
       li {
         line-height: 1.9;
+        font-size: 1rem;
       }
+
       img {
         width: 100%;
         border-radius: 8px;
         margin: 20px 0;
       }
+
       footer {
         background: #2c3e50;
         color: white;
         text-align: center;
-        padding: 20px;
+        padding: 20px 15px;
         margin-top: 40px;
       }
+
       a {
         text-decoration: none;
         color: #3498db;
       }
+
       .gallery-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 15px;
         margin-top: 30px;
       }
+
       .gallery-grid img {
         width: 100%;
         border-radius: 6px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          flex-direction: column;
+          padding: 15px;
+        }
+
+        .article-container,
+        aside {
+          width: 100%;
+        }
+
+        .ad-box {
+          height: 200px;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        p,
+        li {
+          font-size: 0.95rem;
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
       }
     </style>
   </head>
@@ -110,7 +156,6 @@
           في التعبير عن شخصيتها.
         </p>
         <img src="../img/barbie1.jpg" alt="barbie njd" />
-
 
         <h2>مسيرتها وبداية شهرتها</h2>
         <p>
@@ -140,7 +185,6 @@
           عن جسدها وأنوثتها كما تشاء دون خجل أو تقييد. لكن Barbie NJD كانت
           دائمًا حاضرة بردودها الذكية والمباشرة، مما زاد من شعبيتها أكثر.
         </p>
-
         <img src="../img/barbie4.jpg" alt="جدل Barbie NJD" />
 
         <h2>التأثير على جمهورها</h2>
@@ -181,19 +225,16 @@
         <h2>معرض صور Barbie NJD</h2>
         <div class="gallery-grid">
           <img src="../img/barbie6.jpg" alt="Barbie 1" />
-          <img src="../img/barbie7.jpg" alt="Barbie 1" />
-          <img src="../img/barbie8.jpg" alt="Barbie 1" />
-          <img src="../img/barbie9.jpg" alt="Barbie 1" />
-
+          <img src="../img/barbie7.jpg" alt="Barbie 2" />
+          <img src="../img/barbie8.jpg" alt="Barbie 3" />
+          <img src="../img/barbie9.jpg" alt="Barbie 4" />
         </div>
       </div>
 
       <aside>
         <h3>مساحة إعلانية</h3>
-        <div class="ad-box"> </div>
-        <div class="ad-box">
-            <!-- إعلان 300x250 -->
-            </div>
+        <div class="ad-box"> إعلان هنا </div>
+        <div class="ad-box"> إعلان 300x250 </div>
       </aside>
     </div>
 
