@@ -57,12 +57,13 @@
       color: #555;
       font-size: 14px;
     }
-    h1 {
+    h1, h2 {
       color: #2c3e50;
+    }
+    h1 {
       margin-bottom: 20px;
     }
     h2 {
-      color: #2c3e50;
       margin-top: 30px;
       margin-bottom: 10px;
     }
@@ -96,6 +97,42 @@
       padding: 20px;
       margin-top: 40px;
       font-size: 0.9em;
+    }
+
+    /* ------------------ Responsive Design ------------------ */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      .article-container,
+      aside {
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      header {
+        padding: 20px 10px;
+      }
+
+      h1 {
+        font-size: 1.4em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .ad-box {
+        height: 150px;
+        font-size: 13px;
+      }
     }
   </style>
 </head>
