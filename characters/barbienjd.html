@@ -114,10 +114,6 @@
           padding: 15px;
         }
 
-        .article-container,
-        aside {
-          width: 100%;
-        }
 
         .ad-box {
           height: 200px;
@@ -138,6 +134,15 @@
 
         .gallery-grid {
           grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+      }
+      @media (max-width: 600px) {
+        .header {
+          background: linear-gradient(135deg, #2c3e50, #3498db);
+          color: white;
+          text-align: center;
+          padding: 30px 30px;
+          margin: 0;
         }
       }
     </style>
@@ -233,8 +238,8 @@
 
       <aside>
         <h3>مساحة إعلانية</h3>
-        <div class="ad-box"> إعلان هنا </div>
-        <div class="ad-box"> إعلان 300x250 </div>
+        <div class="ad-box">إعلان هنا</div>
+        <div class="ad-box">إعلان 300x250</div>
       </aside>
     </div>
 
