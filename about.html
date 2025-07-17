@@ -1,117 +1,166 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>من نحن - موقع المقالات العامة</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      direction: rtl;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #2c3e50, #3498db);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    nav {
-      background-color: white;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav a {
-      color: #2c3e50;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    nav a:hover {
-      background-color: #3498db;
-      color: white;
-    }
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #2c3e50;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    p {
-      line-height: 1.8;
-      font-size: 1.1em;
-      margin-bottom: 20px;
-      text-align: justify;
-    }
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-    @media (max-width: 600px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>من نحن - موقع المقالات العامة</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        direction: rtl;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      header {
+        background: linear-gradient(135deg, #2c3e50, #3498db);
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
       nav {
-        flex-direction: column;
-        gap: 10px;
+        background-color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      nav a {
+        color: #2c3e50;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      nav a:hover {
+        background-color: #3498db;
+        color: white;
       }
       main {
-        margin: 20px;
-        padding: 15px;
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>من نحن</h1>
-  </header>
-  <nav>
+      h2 {
+        color: #2c3e50;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      p {
+        line-height: 1.8;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 0.9em;
+      }
+      @media (max-width: 600px) {
+        header {
+          padding: 25px 10px;
+        }
+
+        header h1 {
+          font-size: 1.8em;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+
+        }
+
+        nav a {
+          padding: 10px;
+          font-size: 1em;
+          width: 100%;
+          text-align: center;
+        }
+
+        main {
+          margin: 20px;
+          padding: 15px;
+        }
+
+        .articles-container article {
+          padding: 15px;
+        }
+
+        article h2 {
+          font-size: 1.2em;
+        }
+
+        article p {
+          font-size: 0.95em;
+        }
+
+        .sidebar {
+          padding: 15px;
+        }
+
+        .ad-box {
+          font-size: 0.9em;
+          padding: 10px;
+        }
+
+        footer {
+          padding: 15px;
+          font-size: 0.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>من نحن</h1>
+    </header>
+    <nav>
       <a href="index.html">الرئيسية</a>
+      <a href="girls-gallery.html">شخصيات عامة</a>
+      <a href="gallery.html">+18 معرض الصور</a>
       <a href="about.html">من نحن</a>
-        <a href="girls-gallery.html">شخصيات عامة</a>
-              <a href="gallery.html">+18 معرض الصور</a>
       <a href="privacy.html">سياسة الخصوصية</a>
-  </nav>
-  <main>
-    <h2>مرحبًا بكم في موقع المقالات العامة</h2>
-    <p>
-      نحن فريق متخصص في تقديم مقالات متنوعة وموثوقة في مجالات متعددة تشمل الصحة، التنمية الذاتية، التكنولوجيا، العلاقات، وغير ذلك الكثير. هدفنا هو إثراء المعرفة وتمكين القارئ من الوصول إلى محتوى غني ومفيد بطريقة سهلة وممتعة.
-    </p>
-    <p>
-      نؤمن بأن المعرفة هي قوة، ومن خلال هذا الموقع نطمح إلى بناء مجتمع مثقف ومتواصل يشارك ويستفيد من المقالات التي نقدمها بشكل دوري ومتجدد.
-    </p>
-    <p>
-      فريقنا يتكون من كُتاب مختصين وباحثين حرصوا على تقديم محتوى عالي الجودة مبني على مصادر موثوقة وأبحاث حديثة. نحن ملتزمون بأعلى معايير النزاهة والمصداقية لضمان ثقتكم بنا.
-    </p>
-    <p>
-      شكرًا لزيارتكم ونتمنى لكم رحلة قراءة ممتعة ومفيدة. لأي استفسارات أو اقتراحات، لا تترددوا في التواصل معنا عبر صفحة الاتصال.
-    </p>
-  </main>
-  <footer>
-    &copy; 2025 موقع المقالات العامة - جميع الحقوق محفوظة
-  </footer>
-</body>
+    </nav>
+    <main>
+      <h2>مرحبًا بكم في موقع المقالات العامة</h2>
+      <p>
+        نحن فريق متخصص في تقديم مقالات متنوعة وموثوقة في مجالات متعددة تشمل
+        الصحة، التنمية الذاتية، التكنولوجيا، العلاقات، وغير ذلك الكثير. هدفنا هو
+        إثراء المعرفة وتمكين القارئ من الوصول إلى محتوى غني ومفيد بطريقة سهلة
+        وممتعة.
+      </p>
+      <p>
+        نؤمن بأن المعرفة هي قوة، ومن خلال هذا الموقع نطمح إلى بناء مجتمع مثقف
+        ومتواصل يشارك ويستفيد من المقالات التي نقدمها بشكل دوري ومتجدد.
+      </p>
+      <p>
+        فريقنا يتكون من كُتاب مختصين وباحثين حرصوا على تقديم محتوى عالي الجودة
+        مبني على مصادر موثوقة وأبحاث حديثة. نحن ملتزمون بأعلى معايير النزاهة
+        والمصداقية لضمان ثقتكم بنا.
+      </p>
+      <p>
+        شكرًا لزيارتكم ونتمنى لكم رحلة قراءة ممتعة ومفيدة. لأي استفسارات أو
+        اقتراحات، لا تترددوا في التواصل معنا عبر صفحة الاتصال.
+      </p>
+    </main>
+    <footer>&copy; 2025 موقع المقالات العامة - جميع الحقوق محفوظة</footer>
+  </body>
 </html>
