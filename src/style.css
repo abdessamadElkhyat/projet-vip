@@ -1,0 +1,248 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  background: #222;
+  color: white;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hamburger {
+  font-size: 34px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  background: #111;
+  color: white;
+  padding-top: 90px;
+  transition: left 0.3s ease;
+  z-index: 9999;
+}
+.sidebar.active {
+  left: 0;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0 30px;
+}
+.sidebar ul li {
+  margin: 30px 0;
+}
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Articles */
+.ads {
+  background: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+.articles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+.article-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.article-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.article-title {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+.gallery {
+  text-align: center;
+}
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
+}
+.gallery-buttons button {
+  width: 30%;
+  margin: 5px;
+  padding: 10px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.gallery-buttons button:hover {
+  background: #555;
+}
+.article-content {
+  margin: 20px auto;
+  padding: 15px 30px;
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.6;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .gallery img {
+    width: 95%;
+  }
+  .gallery-buttons button {
+    width: 40%;
+  }
+  .article-card {
+    width: 100%;
+  }
+}
+
+/* style.css (ajouter au fichier) */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #f1f1f1;
+  color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 42px;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.page-btn:hover {
+  background: #0077ff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.page-btn.active {
+  background: #0077ff;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .page-btn {
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 14px;
+  }
+}
+
+.policy-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.policy-container h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.policy-container h2 {
+  margin-top: 25px;
+  color: #0077ff;
+  font-size: 22px;
+}
+
+.policy-container p {
+  font-size: 16px;
+  color: #444;
+}
+
+.policy-container a {
+  color: #0077ff;
+  text-decoration: none;
+}
+.policy-container a:hover {
+  text-decoration: underline;
+}
+
+
