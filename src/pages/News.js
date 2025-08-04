@@ -16,9 +16,14 @@ export default function News() {
   const reversedData = Object.entries(data).reverse();
   const totalPages = Math.ceil(reversedData.length / articlesPerPage);
 
-  useEffect(() => {
+useEffect(() => {
+  if (currentPage === 1) {
+    setSearchParams({});
+  } else {
     setSearchParams({ page: currentPage });
-  }, [currentPage, setSearchParams]);
+  }
+}, [currentPage, setSearchParams]);
+
 
   const startIndex = (currentPage - 1) * articlesPerPage;
   const pagedArticles = reversedData.slice(
